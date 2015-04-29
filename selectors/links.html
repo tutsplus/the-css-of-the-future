@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>any-link</title>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p {
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        
+/*        a:visited, a:link { color: red; }*/
+        :any-link { color: red; }
+        
+        a:local-link {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Working with Links</h1>
+    
+    <ul>
+        <li><a href="http://www.tutsplus.com">TutsPlus</a></li>
+        <li><a href="http://www.envato.com">Envato</a></li>
+        <li><a href="matches.html">matches.html</a></li>
+        <li><a href="has.html">has.html</a></li>
+    </ul>
+</body>
+</html>

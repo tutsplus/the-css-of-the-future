@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Matches</title>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p {
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border-radius: 4px;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        
+        section :matches(a, span, button) { color: green; }
+        section :-webkit-any(a, span, button) { color: green; }
+        
+        :matches(h1, h2, h3) span { color: red; }
+        :-webkit-any(h1, h2, h3) span { color: red; }
+        
+    </style>
+</head>
+<body>
+    <h1>The :matches <span>Selector</span></h1>
+    <h2>Matching All <span>Spans</span></h2>
+    <h3>Here's <span>Another Span</span></h3>
+    
+    <section>
+        <p>
+            Si aliqua <span>culpa</span> ab aliquip, senserit anim <a href="#">appellat</a> commodo.
+            Mentitum sunt in incurreret coniunctione, tamen sempiternum commodo noster 
+            consequat.
+        </p>
+        <button>Hello</button>
+    </section>
+    
+</body>
+</html>

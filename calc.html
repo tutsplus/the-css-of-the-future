@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calc()</title>
+        
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                color: #333;
+                font-family: Tahoma, Verdana, sans-serif;
+                height: 95%;
+            }
+            
+            h1 { margin: 0; line-height: 60px; }
+            
+            .container {
+                background-color: #ddd;
+                width: calc(100% - 1em);
+                margin: 0 auto;
+                margin-top: 0.5em;
+                padding: 1em;
+                box-sizing: border-box;
+                height: 100%;
+            }
+            
+            .header {
+                background-color: #777;
+                color: white;
+                height: 60px;
+                padding-left: 1em;
+            }
+            
+            [class^="col-"] {
+                background-color: white;
+                padding: 1em;
+                box-sizing: border-box;
+                border: 1px solid #eee;
+                float: left;
+                margin-right: 1em;
+                height: calc(100% - 60px);
+            }
+            
+            .col-1-3 { width: calc(100% / 3 - 1em); }
+            .col-1-5 { width: calc(100% / 3); }
+            .col-7-15 { width: calc(100% / 3 - 1em); margin-right: 0; }
+            
+            
+            /* CLEARFIX */
+            .clearfix:after {
+                 visibility: hidden;
+                 display: block;
+                 font-size: 0;
+                 content: " ";
+                 clear: both;
+                 height: 0;
+            }
+            .clearfix { display: inline-block; }
+            /* start commented backslash hack \*/
+            * html .clearfix { height: 1%; }
+            .clearfix { display: block; }
+            /* close commented backslash hack */
+        </style>
+    
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="header">
+                <h1>Using Math in CSS</h1>
+            </div>
+            <div class="col-1-3">
+                <h3>One-Third</h3>
+                <p>Varias doctrina despicationes an lorem commodo iis arbitror.
+                    Si eu efflorescere a eram ab offendit se lorem.</p>
+                <p>An minim malis ubi officia hic eu multos legam multos senserit.
+                    Dolor mandaremus an ullamco qui iudicem ex aliquip.</p>
+            </div>
+            <div class="col-1-5">
+                <h3>One-Fifth</h3>
+                <p>Excepteur veniam expetendis mentitum, sed legam litteris.
+                    Sed nescius imitarentur, nostrud ubi commodo.
+                    Quibusdam a duis incididunt sed offendit te labore nostrud.</p>
+            </div>
+            <div class="col-7-15">
+                <h3>Seven-Fifteenths</h3>
+                <p>Arbitror fugiat occaecat fabulas, minim ea proident eu anim.
+                    Ubi ut quem excepteur, cillum hic ingeniis ab multos.</p>
+                <p>Aut e labore magna nisi, quem consequat cohaerescant.
+                    Cupidatat ut multos senserit, vidisse cohaerescant ubi vidisse.</p>
+            </div>
+        </div>
+    </body>
+</html>

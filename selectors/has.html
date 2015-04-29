@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The :has Pseudo-Class</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    <script>
+        $(function() {
+            $("ul.nav li").has("a.active").css("background-color", "#888");
+            
+            $("ul.nav li a").on("click", function() {
+                $(this).preventDefault;
+                $("ul.nav li a").removeClass("active");
+                $(this).addClass("active");
+                $("ul.nav li").css("background-color", "#fafafa");
+                $("ul.nav li").has("a.active").css("background-color", "#888");
+            });
+            
+        });
+    </script>
+    
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p {
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        ul.nav {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.nav li {
+            float: left;
+            display: block;
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+        }
+        
+        ul.nav li:not(:last-child) {
+            border-right: none;
+        }
+        
+        ul.nav li a {
+            color: #777;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 1s;
+        }
+        
+        ul.nav li a:hover {
+            color: #aaa;
+        }
+        
+        ul.nav li a.active {
+            color: #eee;
+        }
+        
+        ul.nav li:has(a.active) {
+            background-color: #888;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>The :has Pseudo-Class</h1>
+    <ul class="nav">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>

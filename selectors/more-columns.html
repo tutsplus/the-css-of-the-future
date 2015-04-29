@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Column Pseudo-Classes</title>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p {
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        table td {
+            border: 1px solid #999;
+            margin: 0;
+            padding: 10px 20px;
+            width: 100px;
+        }
+        
+        td:nth-child(2n+1) {
+            background-color: #ddd;
+        }
+        
+        :nth-column(2n+1) {
+            background-color: #ddd;
+        }
+        
+        td:nth-last-child(2n+1) {
+            background-color: #eee;
+        }
+        
+        :nth-last-column(2n+1) {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Column Pseudo-Classes</h1>
+    
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

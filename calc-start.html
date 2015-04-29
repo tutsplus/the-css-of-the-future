@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calc()</title>
+        
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                color: #333;
+                font-family: Tahoma, Verdana, sans-serif;
+            }
+            
+            h1 { margin: 0; }
+            
+            .container {
+                width: 100%;
+            }
+            
+            [class^="col-"] {}
+            
+            .col-1-3 {}
+            .col-1-5 {}
+            .col-7-15 {}
+            
+            
+            /* CLEARFIX */
+            .clearfix:after {
+                 visibility: hidden;
+                 display: block;
+                 font-size: 0;
+                 content: " ";
+                 clear: both;
+                 height: 0;
+            }
+            .clearfix { display: inline-block; }
+            /* start commented backslash hack \*/
+            * html .clearfix { height: 1%; }
+            .clearfix { display: block; }
+            /* close commented backslash hack */
+        </style>
+    
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="header">
+                <h1>Using Math in CSS</h1>
+            </div>
+            <div class="col-1-3">
+                <h3>One-Third</h3>
+                <p>Varias doctrina despicationes an lorem commodo iis arbitror.
+                    Si eu efflorescere a eram ab offendit se lorem.</p>
+                <p>An minim malis ubi officia hic eu multos legam multos senserit.
+                    Dolor mandaremus an ullamco qui iudicem ex aliquip.</p>
+            </div>
+            <div class="col-1-5">
+                <h3>One-Fifth</h3>
+                <p>Excepteur veniam expetendis mentitum, sed legam litteris.
+                    Sed nescius imitarentur, nostrud ubi commodo.
+                    Quibusdam a duis incididunt sed offendit te labore nostrud.</p>
+            </div>
+            <div class="col-7-15">
+                <h3>Seven-Fifteenths</h3>
+                <p>Arbitror fugiat occaecat fabulas, minim ea proident eu anim.
+                    Ubi ut quem excepteur, cillum hic ingeniis ab multos.</p>
+                <p>Aut e labore magna nisi, quem consequat cohaerescant.
+                    Cupidatat ut multos senserit, vidisse cohaerescant ubi vidisse.</p>
+            </div>
+        </div>
+    </body>
+</html>

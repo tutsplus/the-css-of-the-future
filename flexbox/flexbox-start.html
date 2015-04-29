@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        
+        <style>
+            body, h1, h2, h3, h4, h5, h6, p {
+                color: #333;
+                font-family: Tahoma, Verdana, sans-serif;
+            }
+            
+            .container > div {
+                background-color: #eee;
+                border-radius: 10px;
+                margin: 5px;
+                padding: 10px;
+                border: 1px solid #bbb;
+            }
+            
+            .container {
+                background-color: #888;
+                padding: 10px;
+            }
+            
+            .flex-item { flex: 1; }
+            .logo { order: 1; flex: 1 100%; }
+            .menu { order: 2; }
+            .copyright { order: 5; flex: 1 100%; }
+            .feature { order: 3; flex: 3; }
+            .sub-content { order: 4; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-item logo"><h3>Flexbox</h3></div>
+            <div class="flex-item menu">
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex-item copyright">&copy; copyright 2015</div>
+            <div class="flex-item feature">
+                <h2>Feature Content</h2>
+                <p>Aliqua commodo laborum ad aut sunt fugiat tamen deserunt.
+                    Sed lorem aliquip relinqueret o nam se sint illum lorem.
+                    Incurreret duis summis ullamco illum ubi et enim excepteur.
+                </p>
+            </div>
+            <div class="flex-item sub-content">
+                <h4>Other Content</h4>
+                <p>Nisi possumus fidelissimae, cernantur varias sunt arbitror aliqua.</p>
+            </div>
+        </div>
+    </body>
+</html>

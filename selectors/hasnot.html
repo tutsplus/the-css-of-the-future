@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>index</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    <script>
+        $(function() {
+            
+            // Section does not contain any heading tags
+            //$("section:not(:has('h1,h2,h3,h4,h5,h6'))").css("background-color", "red");
+
+            // Section contains at least one element that is not a heading tag
+            $("section:has(:not('h1,h2,h3,h4,h5,h6'))").css("background-color", "red");
+        });
+    </script>
+    
+    <style>
+        body {
+            background-color: #eee;
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        section {
+            background-color: #fafafa;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #bbb;
+            border-radius: 10px;
+        }
+        
+        section:not(:has(h1, h2, h3, h4, h5, h6)) {
+            background-color: red;
+        }
+        
+        section:has(:not(h1, h2, h3, h4, h5, h6)) {
+            background-red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relational Negation</h1>
+    
+    <section>
+            <h3>Section 1</h3>
+    </section>
+    <section>
+        <h3>Section 2</h3>
+        <h4>Just Some Headings</h4>
+        <h5>Nothing Else</h5>
+    </section>
+    <section>
+        <h3>Heading</h3>
+        <p>Appellat sint irure appellat minim si irure aliquip iis sempiternum.
+            Quamquam enim ullamco iis commodo magna illum voluptate quae.
+            Excepteur in nulla, aliqua incididunt e malis quorum.</p>
+    </section>
+</body>
+</html>

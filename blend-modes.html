@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Blend Modes</title>
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p {
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            position: relative;
+        }
+        .img {
+            width: 300px;
+            height: 200px;
+            box-sizing: border-box;
+            background-size: cover;
+            background-color: green;
+            background-blend-mode: hard-light;
+        }
+        
+        .img:hover {
+            background-blend-mode: normal;
+        }
+
+        .img1 { background-image: url(Images/city-3.jpg); }
+        .img2 { background-image: url(Images/city-4.jpg); }
+        .img3 { background-image: url(Images/city-5.jpg); }
+        .img4 { background-image: url(Images/city-6.jpg); }
+        
+        .food {
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 400px;
+            width: 600px;
+            text-align: center;
+        }
+        
+        .food h2 {
+            color: red;
+            font-size: 180px;
+            margin-top: 0;
+            mix-blend-mode: screen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="img img1">
+        </div>
+        <div class="img img2">
+        </div>
+        <div class="img img3">
+        </div>
+        <div class="img img4">
+        </div>
+        <div class="food"><h2>FOOD</h2></div>
+    </div>
+    
+</body>
+</html>

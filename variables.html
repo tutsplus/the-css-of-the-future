@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Variables</title>
+        
+        <style>
+            :root {
+                --blue: #46a;
+                --lightBlue: #8af;
+                --grayBorder: 1px solid #888;
+            }
+            
+            html, body {
+                color: #444;
+                font-family: Tahoma, Verdana, sans-serif;
+            }
+                    
+            .feature {
+                --orange: #f73;
+            }
+            
+            h1 { color: var(--blue); }
+                    
+            h3 { color: var(--orange); }
+            
+            a {
+                background-color: var(--lightBlue);
+                color: white;
+            }
+                    
+            ul {
+                background-color: #fafafa;
+                width: 400px;
+                padding: 10px;
+                padding-left: 30px;
+                color: var(--orange);
+                border: var(--grayBorder);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Variables</h1>
+        <h3>Sample Heading</h3>
+        <p>Ab summis quamquam offendit, <a href="#">multos de in esse mandaremus</a>.
+            Litteris relinqueret o arbitror et sint cupidatat ea doctrina.
+            Cernantur a incurreret, <a href="#">duis voluptatibus iudicem</a> lorem singulis.</p>
+        <div class="feature">
+            <h3>Subheading</h3>
+            <p>Tempor te noster laborum, de amet incurreret tempor.
+                Excepteur si mentitum aut fabulas ad incurreret.
+                Ab ne malis magna sint, ubi ne graviterque.</p>
+        
+            <ul>
+                <li>proident aut ullamco</li>
+                <li>et coniunctione arbitror mandaremus</li>
+                <li>nulla cohaerescant non</li>
+                <li>est ullamco multos dolor</li>
+            </ul>
+        </div>
+    </body>
+</html>
